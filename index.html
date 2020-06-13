@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="tianqi.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+        <!--    搜索    -->
+    <div class="search">
+        <span>Tq</span>
+        <form target="sou" id="search_from">
+        <input type="search" placeholder="输入搜索的城市">
+        <iframe name="sou" style = "display: none"></iframe>
+        </form>
+        <div class="search-btn"><img src="images/search.png" alt=""></div>
+    </div>
+        <!--    历史记录-->
+    <div class="history">
+        <div class="la">
+            <span>历史查询</span>
+            <img src="images/more.png" alt="">
+        </div>
+        <div class="historys">
+        <!--    历史记录        -->
+        </div>
+        <div class="clearbtn">
+            清除历史记录
+        </div>
+    </div>
+        <!--    今日天气    -->
+    <div class="information">
+
+    </div>
+        <!--    天气预报    -->
+    <div class="forecast">
+
+    </div>
+        <!--    生活指数    -->
+    <div class="lifestyle">
+            <h2>生活指数</h2>
+            <div class="lifestyle-box">
+                <div class="lifestyle-item" data-indexs="0">
+                    <i class="iconfont icon-shushidu"></i>
+                    <span>舒适度指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="1">
+                    <i class="iconfont icon-3chuanyixiguan"></i>
+                    <span>穿衣指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="2">
+                    <i class="iconfont icon-ganmaoyaowu"></i>
+                    <span>感冒指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="3">
+                    <i class="iconfont icon-yundong"></i>
+                    <span>运动指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="4">
+                    <i class="iconfont icon-lvyou"></i>
+                    <span>旅游指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="5">
+                    <i class="iconfont icon-iconset0451"></i>
+                    <span>紫外线指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="6">
+                    <i class="iconfont icon-xiche"></i>
+                    <span>洗车指数</span>
+                </div>
+                <div class="lifestyle-item" data-indexs="7">
+                    <i class="iconfont icon-kongqiwuranfenxi"></i>
+                    <span>空气污染扩散条件指数</span>
+                </div>
+            </div>
+        </div>
+        <!--    生活指数弹窗    -->
+    <div class="lifestyle-tc">
+    </div>
+    <script src="rem.js"></script>
+    <script src="Ajax.js"></script>
+    <script src="tianqi.js"></script>
+</body>
+</html>

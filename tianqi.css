@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+body {
+    background-size: 120%;
+    color: white;
+}
+.search {
+    position: fixed;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgba(0,0,0,.0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search_from {
+    width: 2.8rem;
+    height: 0.4rem;
+    position: relative;
+}
+.search > span {
+    width: 0.5rem;
+    font-size: 0.25rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-family: "Segoe UI Symbol";
+    color: white;
+}
+.search #search_from > input {
+    width: 2.8rem;
+    height: 0.4rem;
+    border-radius: 0.1rem;
+    text-indent: 0.1rem;
+    outline: none;
+    position: absolute;
+    border: none;
+    border-bottom: 0.01rem solid white;
+    background-color: rgba(255,255,255,.05);
+    color: white;
+}
+.search #search_from > input::-webkit-input-placeholder {
+    color: white;
+}
+.search > .search-btn {
+    width: 0.5rem;
+    position: relative;
+}
+.search > .search-btn > img {
+    width: 0.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.history {
+    height: 0.9rem;
+    overflow: auto;
+    background-color: rgba(255,255,255,.05);
+    transition-duration: 0.5s;
+}
+.historys {
+    margin-top: 0.8rem;
+    overflow: hidden;
+}
+.history .history-item {
+    display: flex;
+    height: 0.4rem;
+    border-bottom: 0.01rem dashed #cccccc;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.history .history-item > .history-time {
+    font-size: 0.14rem;
+}
+.history .history-item > .history-city {
+    font-size: 0.18rem;
+}
+.history .la {
+    height: 0.3rem;
+    display: flex;
+    position: fixed;
+    top: 0.45rem;
+    width: 90%;
+    background-color: rgba(255,255,255,.0);
+    justify-content: space-between;
+    font-size: 0.16rem;
+    border-bottom: 0.01rem solid white;
+    margin: 0.1rem 0.2rem;
+    font-family: 幼圆;
+    line-height: 0.3rem;
+}
+.history .la > span {
+    color: white;
+}
+.history .la > img {
+    width: 0.2rem;
+    height: 0.2rem;
+    padding: 0.03rem;
+    border: 0.01rem solid #cccccc;
+    border-radius: 0.05rem;
+}
+.clearbtn {
+    height: 0.3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 0.2rem;
+    margin-top: 0.1rem;
+    line-height: 0.3rem;
+}
+.information {
+    /*background-color: gold;*/
+}
+.now {
+    padding-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.now .city {
+   font-size: 0.4rem;
+    text-align: center;
+}
+.now .situation {
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.15rem;
+    align-items: center;
+}
+.now .situation > img {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+}
+.now .temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.now .temp > h3 {
+    font-size: 0.2rem;
+    margin-top: 0.1rem;
+}
+.forecast {
+    background-color: rgba(0,0,0,.3);
+    margin: 0 0.2rem;
+    border-radius: 0.1rem;
+}
+.forecast-item {
+    height: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.1rem 0.2rem 0;
+    padding-top: 0.1rem;
+}
+.forecast-item:last-of-type {
+    padding-bottom: 0.1rem;
+}
+.forecast-item .forecast-situation > img {
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.forecast-item .forecast-situation {
+    font-size: 0.16rem;
+}
+.forecast-temp {
+    font-size: 0.18rem;
+}
+.lifestyle {
+    display: none;
+    margin: 0 0.2rem;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 0.1rem;
+}
+.lifestyle > h2 {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 0.2rem;
+    padding-top: 0.15rem;
+    font-family: 幼圆;
+}
+.lifestyle .lifestyle-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lifestyle .lifestyle-box .lifestyle-item {
+    display: flex;
+    flex-direction: column;
+    width: 0.7rem;
+    height: 0.4rem;
+    font-size: 0.14rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 0.05rem;
+
+}
+.lifestyle .lifestyle-box .lifestyle-item > i {
+    font-size: 0.2rem;
+}
+.lifestyle .lifestyle-box .lifestyle-item > span {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.lifestyle-tc {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    font-family: 幼圆;
+    line-height: 0.4rem;
+
+}
+.lifestyle-tc .fanghui {
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.1rem;
+}
+.lifestyle-tc .fanghui > img {
+    width: 100%;
+}
+.lifestyle-tc > h2 {
+    font-size: 0.3rem;
+    width: 2.2rem;
+    margin: 0.3rem auto 0;
+    text-align: center;
+}
+.lifestyle-tc > span {
+    width: 100%;
+    font-size: 0.2rem;
+    margin-top: 1.5rem;
+    display: block;
+    font-weight: 700;
+    text-indent: 0.16rem;
+}
+.lifestyle-tc > p {
+    text-indent: 0.32rem;
+    font-size: 0.2rem;
+}
